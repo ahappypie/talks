@@ -1,0 +1,5 @@
+.direnv
+.idea
+.turbo
+dist
+node_modules

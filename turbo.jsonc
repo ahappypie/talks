@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/turbo/schema.json",
+  "tasks": {
+    "build-web": {
+      "outputs": ["../../dist/**"] //apparently it's relative to the execution directory?
+    }
+  },
+}
