@@ -1,0 +1,15 @@
+{
+  "name": "index",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build-web": "slidev build --out ../../dist/",
+    "dev": "slidev --open --remote",
+    "export": "slidev export --with-clicks --per-slide --wait-until none",
+    "generate": "node generate.ts"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.2"
+  }
+}
