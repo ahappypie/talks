@@ -8,11 +8,14 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+      - name: install pnpm
+        uses: pnpm/action-setup@v4
       - name: install node
-        uses: actions/setup-node@v4.3.0
+        uses: actions/setup-node@v5
         with:
           node-version: 24.5.0
+          cache: pnpm
       - name: install workspace
         run: |
           pnpm install --frozen-lockfile
