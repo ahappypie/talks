@@ -1,0 +1,28 @@
+on:
+  pull_request:
+    paths:
+      - packages/**
+
+jobs:
+  check-generated-index:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+      - name: install pnpm
+        uses: pnpm/action-setup@v4
+      - name: install node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24.5.0
+          cache: pnpm
+      - name: install workspace
+        run: |
+          pnpm install --frozen-lockfile
+      - name: run generator
+        run: |
+          cd packages/index
+          pnpm run generate
+      - name: check status
+        run: |
+          git diff --exit-code
