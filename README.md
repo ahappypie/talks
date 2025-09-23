@@ -1,6 +1,8 @@
 # talks
 Tech Talks on various topics.
 
+Packaging and slide architecture originally created by [nekomeowww/talks](https://github.com/nekomeowww/talks).
+
 ## Networking
 * What is a network? What is the internet?
 * How does information move through a network?

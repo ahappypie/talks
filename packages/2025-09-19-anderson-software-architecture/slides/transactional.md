@@ -16,7 +16,7 @@ class: py-10
     <div flex flex-col gap-3>
       <div v-click="2">
         <div text-sm font-medium>Atomic</div>
-        <div text-xs opacity-70>Suceed or Fail, no Partial Completeness</div>
+        <div text-xs opacity-70>Succeed or Fail, no Partial Completeness</div>
       </div>
       <div v-click="3">
         <div text-sm font-medium>Consistent</div>

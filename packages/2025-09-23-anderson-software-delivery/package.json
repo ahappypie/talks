@@ -1,0 +1,14 @@
+{
+  "name": "2025-09-23-anderson-software-delivery",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build-web": "slidev build --out ../../dist/2025-09-23-anderson-software-delivery --base /2025-09-23-anderson-software-delivery/",
+    "dev": "slidev --open --remote",
+    "export": "slidev export --with-clicks --per-slide --wait-until none"
+  },
+  "devDependencies": {
+
+  }
+}
