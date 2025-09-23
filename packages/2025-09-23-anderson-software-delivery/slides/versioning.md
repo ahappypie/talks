@@ -26,7 +26,7 @@ class: py-10
         <div text-xs opacity-70>Features</div>
       </div>
       <div v-click="5">
-        <div text-sm font-medium>Minor</div>
+        <div text-sm font-medium>Patch</div>
         <div text-xs opacity-70>Fixes</div>
       </div>
     </div>
