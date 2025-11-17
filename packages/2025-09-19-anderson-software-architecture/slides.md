@@ -69,6 +69,9 @@ src: ./slides/system-design-multi.md
 src: ./slides/system-design-comms.md
 ---
 ---
+src: ./slides/real-world-design.md
+---
+---
 src: ./slides/takeaways.md
 ---
 ---

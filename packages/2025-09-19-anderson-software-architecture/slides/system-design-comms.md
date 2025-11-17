@@ -13,6 +13,4 @@ class: py-10
 So far been talking about communications from a user perspective
 
 What about east/west communications?
-
-The rise of domain services
 -->
