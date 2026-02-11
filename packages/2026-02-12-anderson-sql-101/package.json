@@ -1,10 +1,10 @@
 {
-  "name": "2026-02-09-anderson-sql-101",
+  "name": "2026-02-12-anderson-sql-101",
   "type": "module",
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "build-web": "slidev build --out ../../dist/2026-02-09-anderson-sql-101 --base /2026-02-09-anderson-sql-101/",
+    "build-web": "slidev build --out ../../dist/2026-02-12-anderson-sql-101 --base /2026-02-12-anderson-sql-101/",
     "dev": "slidev --open --remote",
     "export": "slidev export --with-clicks --per-slide --wait-until none"
   },
