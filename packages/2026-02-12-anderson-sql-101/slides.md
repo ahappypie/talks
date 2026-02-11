@@ -66,10 +66,10 @@ src: ./slides/order.md
 src: ./slides/takeaways.md
 ---
 ---
-src: ./slides/appendix.md
----
----
 src: ./slides/next-topics.md
+---
+---
+src: ./slides/appendix.md
 ---
 ---
 src: ./slides/citations.md
