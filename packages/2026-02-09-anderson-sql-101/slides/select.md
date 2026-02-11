@@ -3,7 +3,7 @@ class: py-10
 ---
 # Basic Statements
 
-<div class="mt-2 flex flex-col justify-center items-center">
+<div class="flex flex-col justify-center items-center">
   <div v-click="1" class="flex items-start content-start items-center gap-4">
 ```sql {hide|1-3|5-7|9-12|14-16|18-20|22-24|all}{at:'+1',lines:true}
 -- list named columns from a specific table

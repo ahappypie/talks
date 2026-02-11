@@ -5,7 +5,6 @@ class: py-10
 
 ## <code>JOIN</code>s
 ## Subqueries
-## <code>CASE</code> Statements
 ## Aggregates
 ## Common Table Expressions (CTE)
 

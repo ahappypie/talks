@@ -20,7 +20,7 @@ routerMode: hash
 Structured Query Language (SQL) 101
 </h1>
 
-Language of the Modern Data System
+Language of the Modern Data Stack
 
 </div>
 
@@ -39,7 +39,13 @@ src: ./slides/personal-intro.md
 src: ./slides/why-sql.md
 ---
 ---
+src: ./slides/oltp.md
+---
+---
 src: ./slides/olap.md
+---
+---
+src: ./slides/install.md
 ---
 ---
 src: ./slides/setup.md

@@ -29,10 +29,12 @@ layout: intro
                 <span text-2xl>Agenda</span>
             </div>
             <div flex flex-col items-start content-start gap-4 transition duration-500 ease-in-out>
-                <div flex items-center gap-2 w-fit h-fit v-click="2"><div i-ri:arrow-up-s-fill rotate-90/>Navigating a Database</div>
-                <div flex items-center gap-2 w-fit h-fit v-click="3"><div i-ri:arrow-up-s-fill rotate-90/>Basic Queries</div>
-                <div flex items-center gap-2 w-fit h-fit v-click="4"><div i-ri:arrow-up-s-fill rotate-90/>Filtering</div>
-                <div flex items-center gap-2 w-fit h-fit v-click="5"><div i-ri:arrow-up-s-fill rotate-90/>Sorting</div>
+                <div flex items-center gap-2 w-fit h-fit v-click="2"><div i-ri:arrow-up-s-fill rotate-90/>Why SQL?</div>
+                <div flex items-center gap-2 w-fit h-fit v-click="3"><div i-ri:arrow-up-s-fill rotate-90/>Setup</div>
+                <div flex items-center gap-2 w-fit h-fit v-click="4"><div i-ri:arrow-up-s-fill rotate-90/>Navigating a Database</div>
+                <div flex items-center gap-2 w-fit h-fit v-click="5"><div i-ri:arrow-up-s-fill rotate-90/>Basic Queries</div>
+                <div flex items-center gap-2 w-fit h-fit v-click="6"><div i-ri:arrow-up-s-fill rotate-90/>Filtering</div>
+                <div flex items-center gap-2 w-fit h-fit v-click="7"><div i-ri:arrow-up-s-fill rotate-90/>Sorting</div>
             </div>
         </div>
     </div>
