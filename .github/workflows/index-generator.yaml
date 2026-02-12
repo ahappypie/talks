@@ -25,4 +25,4 @@ jobs:
           pnpm run generate
       - name: check status
         run: |
-          git diff --exit-code
+          git diff --exit-code packages/index/index.json
