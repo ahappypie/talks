@@ -18,3 +18,7 @@ class: py-10
 <br>
 <span text-color-purple v-click="6">ORDER BY <i>column</i> ASC | DESC</span>
 </code>
+
+<h1 mt-16 v-click="7">
+When you need help: <span underline decoration-dashed><a href="https://duckdb.org/docs" target="_blank">Documentation</a></span>!
+</h1>

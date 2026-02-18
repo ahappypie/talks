@@ -62,6 +62,6 @@ class: py-10
 </div>
 </div>
 
----
+<!--
 https://www.beekeeperstudio.io/blog/sql-joins-for-beginners-with-diagrams
----
+-->

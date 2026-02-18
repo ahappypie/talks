@@ -5,6 +5,6 @@ layout: intro
 <div flex flex-col-2 justify-center gap-40 h-75>
     <div items-center font-semibold>
         Slides
-        <QrCode value="https://talks.watershed.technology/2025-09-23-anderson-software-delivery" />
+        <QrCode value="2026-02-18-anderson-sql-102" />
     </div>
 </div>

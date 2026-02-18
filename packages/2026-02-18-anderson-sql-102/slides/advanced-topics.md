@@ -1,12 +1,11 @@
 ---
 class: py-10
 ---
-# Topics for SQL 102
+# Topics beyond SQL 102
 
 ## <code>CASE</code> Statements
-## Subqueries
-## Common Table Expressions (CTE)
 ## <code>UNION</code> Operator
 ## Window Functions
-## Full and Cross Joins
+## <code>PIVOT</code> & <code>ROLLUP</code> Operators
+## Cross Joins
 

@@ -65,15 +65,19 @@ src: ./slides/subquery.md
 ---
 
 ---
+src: ./slides/cte.md
+---
+
+---
 src: ./slides/takeaways.md
 ---
 
 ---
-src: ./slides/appendix.md
+src: ./slides/advanced-topics.md
 ---
 
 ---
-src: ./slides/cte.md
+src: ./slides/appendix.md
 ---
 
 ---
