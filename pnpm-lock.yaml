@@ -49,6 +49,12 @@ importers:
 
   packages/2025-09-23-anderson-software-delivery: {}
 
+  packages/2026-02-12-anderson-sql-101: {}
+
+  packages/2026-02-18-anderson-sql-102: {}
+
+  packages/2026-09-29-anderson-the-internet: {}
+
   packages/index:
     devDependencies:
       '@types/node':

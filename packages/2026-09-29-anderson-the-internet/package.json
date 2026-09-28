@@ -1,0 +1,14 @@
+{
+  "name": "2026-09-29-anderson-the-internet",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build-web": "slidev build --out ../../dist/2026-09-29-anderson-the-internet --base /2026-09-29-anderson-the-internet/",
+    "dev": "slidev --open --remote",
+    "export": "slidev export --with-clicks --per-slide --wait-until none"
+  },
+  "devDependencies": {
+
+  }
+}
