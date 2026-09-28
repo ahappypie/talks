@@ -9,6 +9,6 @@ layout: intro
     </div>
     <div>
         Up Next
-        <img src="/session2.png">
+        <img src="/session2.svg">
     </div>
 </div>
