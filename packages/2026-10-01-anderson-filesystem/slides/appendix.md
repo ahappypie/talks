@@ -5,10 +5,10 @@ layout: intro
 <div flex flex-col-2 justify-center gap-40 h-75>
     <div items-center font-semibold>
         Slides
-        <QrCode value="2026-09-29-anderson-the-internet" />
+        <QrCode value="2026-10-01-anderson-filesystem" />
     </div>
     <div>
         Up Next
-        <img src="/session2.svg">
+        <img src="/session3.svg">
     </div>
 </div>
