@@ -1,0 +1,14 @@
+{
+  "name": "2026-10-06-anderson-cloud",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build-web": "slidev build --out ../../dist/2026-10-06-anderson-cloud --base /2026-10-06-anderson-cloud/",
+    "dev": "slidev --open --remote",
+    "export": "slidev export --with-clicks --per-slide --wait-until none"
+  },
+  "devDependencies": {
+
+  }
+}
