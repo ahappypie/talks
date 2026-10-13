@@ -10,5 +10,9 @@
   },
   "devDependencies": {
 
+  },
+  "watershed": {
+    "title": "The Art of Software Architecture",
+    "series": "AnderTech Fall 2025 Learning Sessions"
   }
 }

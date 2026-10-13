@@ -10,5 +10,9 @@
   },
   "devDependencies": {
 
+  },
+  "watershed": {
+    "title": "Software Delivery",
+    "series": "AnderTech Fall 2025 Learning Sessions"
   }
 }

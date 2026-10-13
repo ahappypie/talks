@@ -10,5 +10,9 @@
   },
   "devDependencies": {
 
+  },
+  "watershed": {
+    "title": "SQL 101",
+    "series": "AnderTech Winter 2026 SQL Series"
   }
 }

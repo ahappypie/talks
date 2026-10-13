@@ -3,13 +3,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "build-web": "slidev build --out ../../dist/",
-    "dev": "slidev --open --remote",
-    "export": "slidev export --with-clicks --per-slide --wait-until none",
-    "generate": "node generate.ts"
+    "build-web": "astro build && cp ./dist/index.html ../../dist",
+    "dev": "astro dev",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "@types/node": "24.5.2"
+    "@types/node": "24.5.2",
+    "astro": "7.3.8"
   }
 }

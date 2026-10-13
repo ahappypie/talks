@@ -10,5 +10,9 @@
   },
   "devDependencies": {
 
+  },
+  "watershed": {
+    "title": "The Filesystem",
+    "series": "AnderTech Fall 2026 Accelerated Curriculum"
   }
 }
