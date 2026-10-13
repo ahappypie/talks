@@ -1,0 +1,140 @@
+---
+interface TalkPackage {
+  name: string
+  watershed?: {
+    title: string
+    series: string
+  }
+}
+
+const packages = import.meta.glob<TalkPackage>('../../../*/package.json', {
+  eager: true,
+  import: 'default',
+})
+const talks = Object.values(packages).flatMap(pkg =>
+  pkg.name !== 'index' && pkg.watershed
+    ? [{
+        slug: pkg.name,
+        date: pkg.name.split('-').slice(0, 3).join('-'),
+        title: pkg.watershed.title,
+        series: pkg.watershed.series,
+      }]
+    : [],
+).sort((a, b) => a.date.localeCompare(b.date) || a.slug.localeCompare(b.slug))
+
+// Insertion order places series by their earliest talk, with each list oldest first.
+const series = new Map<string, typeof talks>()
+for (const talk of talks) {
+  const group = series.get(talk.series) ?? []
+  group.push(talk)
+  series.set(talk.series, group)
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Technology talks and presentations from Watershed" />
+    <title>Talks</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Talks Index</h1>
+        <p>Reference slides for sessions on software, data, and infrastructure concepts and skills</p>
+      </header>
+      <nav aria-label="Presentations">
+        {Array.from(series, ([name, talks]) => (
+          <section>
+            <h2>{name}</h2>
+            <ul>
+              {talks.map(talk => (
+                <li>
+                  <a href={`/${talk.slug}/`}>
+                    <time datetime={talk.date}>{talk.date}</time>
+                    <span>{talk.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </nav>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(html) {
+    color-scheme: dark;
+    background: #111;
+    color: #eee;
+    font-family: system-ui, sans-serif;
+  }
+
+  :global(body) {
+    margin: 0;
+  }
+
+  main {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .time {
+    color: #aaa;
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin: 0.5rem 0;
+  }
+
+  section + section {
+    margin-top: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    border-bottom: 1px solid #333;
+  }
+
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1.5rem;
+    padding: 1rem 0;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover span, a:focus-visible span {
+    text-decoration: underline;
+  }
+
+  a:focus-visible {
+    outline: 2px solid #8cb4ff;
+    outline-offset: 4px;
+  }
+
+  time {
+    flex-shrink: 0;
+  }
+</style>

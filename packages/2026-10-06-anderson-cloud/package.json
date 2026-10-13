@@ -10,5 +10,9 @@
   },
   "devDependencies": {
 
+  },
+  "watershed": {
+    "title": "Cloud Economics",
+    "series": "AnderTech Fall 2026 Accelerated Curriculum"
   }
 }

@@ -10,5 +10,9 @@
   },
   "devDependencies": {
 
+  },
+  "watershed": {
+    "title": "How The Internet Works",
+    "series": "AnderTech Fall 2026 Accelerated Curriculum"
   }
 }
