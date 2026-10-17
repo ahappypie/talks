@@ -1,0 +1,19 @@
+{
+  "name": "2026-10-20-anderson-modern-data",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build-web": "slidev build --out ../../dist/2026-10-20-anderson-modern-data --base /2026-10-20-anderson-modern-data/",
+    "dev": "slidev --open --remote",
+    "export": "slidev export --with-clicks --per-slide --wait-until none",
+    "marimo:edit": "cd marimo && uv run marimo edit --watch --headless"
+  },
+  "devDependencies": {
+
+  },
+  "watershed": {
+    "title": "Modern Data Systems",
+    "series": "AnderTech Fall 2026 Accelerated Curriculum"
+  }
+}
