@@ -1,0 +1,21 @@
+[project]
+name = "2026-10-20-anderson-modern-data-notebooks"
+version = "0.0.0"
+description = "notebooks for modern data systems demo - the inverted index"
+readme = "README.md"
+authors = [
+    { name = "Brian Bagdasarian", email = "brian@watershed.technology" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "marimo==0.25.1",
+    "marimo-studio==0.3.0",
+    "duckdb==1.5.6",
+    "altair==6.3.0",
+    "polars[pyarrow]>=1.44.2",
+    "sqlglot[c]>=30.21.0",
+    "ruff==0.16.10",
+    "vegafusion==2.0.3",
+    "vl-convert-python==1.9.0.post1",
+]
+
