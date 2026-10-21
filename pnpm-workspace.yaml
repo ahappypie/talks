@@ -1,7 +1,9 @@
 packages:
   - packages/**
   - '!dist/**'
+
 onlyBuiltDependencies:
   - esbuild
   - playwright-chromium
+  - sharp
   - vue-demi
